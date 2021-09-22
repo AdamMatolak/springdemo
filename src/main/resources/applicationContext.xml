@@ -10,8 +10,11 @@
 
     <bean id="baseball"
           class="sk.akademiasovy.matolak.BaseballCoach">
+        <constructor-arg ref="myFortuneService"/>
     </bean>
     <bean id="football"
           class="sk.akademiasovy.matolak.TrackCoach">
     </bean>
+    <bean id="myFortuneService"
+          class="sk.akademiasovy.matolak.HappyFortuneService"/>
 </beans>

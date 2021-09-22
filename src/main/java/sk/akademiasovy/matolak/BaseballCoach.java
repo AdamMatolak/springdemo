@@ -6,4 +6,9 @@ public class BaseballCoach implements Coach {
         return "Spend 10 minutes on practise";
     }
 
+    @Override
+    public String getDailyFortune() {
+        return "The more homeruns you will make, the happier your day will be";
+    }
+
 }

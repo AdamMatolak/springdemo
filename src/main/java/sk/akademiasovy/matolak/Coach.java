@@ -1,5 +1,6 @@
 package sk.akademiasovy.matolak;
 
 public interface Coach {
-    public String getDailyWorkout();
+    String getDailyWorkout();
+    String getDailyFortune();
 }
