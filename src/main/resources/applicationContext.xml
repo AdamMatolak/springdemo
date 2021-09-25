@@ -17,4 +17,7 @@
     </bean>
     <bean id="myFortuneService"
           class="sk.akademiasovy.matolak.HappyFortuneService"/>
+    <bean id="myCricketCoach" class="sk.akademiasovy.matolak.CricketCoach">
+        <property name="fortuneService" ref="myFortuneService"/>
+    </bean>
 </beans>

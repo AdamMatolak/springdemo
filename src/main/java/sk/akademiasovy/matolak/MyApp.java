@@ -12,6 +12,8 @@ public class MyApp {
         var coach = context.getBean("baseball", Coach.class);
         logger.log(Level.INFO, coach.getDailyWorkout());
         logger.info(coach.getDailyFortune());
+
+        coach = context.getBean("myCricketCoach",Coach.class);
         context.close();
 
 
