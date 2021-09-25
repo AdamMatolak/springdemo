@@ -9,11 +9,11 @@ public class MyApp {
     private static final Logger logger = Logger.getLogger(MyApp.class.getName());
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
-        var coach = context.getBean("baseball", Coach.class);
-        logger.log(Level.INFO, coach.getDailyWorkout());
-        logger.info(coach.getDailyFortune());
+        var cricketCoach = context.getBean("myCricketCoach", CricketCoach.class);
+        logger.info(cricketCoach.getDailyFortune());
 
-        coach = context.getBean("myCricketCoach",Coach.class);
+        logger.info(cricketCoach.getEmail());
+        logger.info(cricketCoach.getTeam());
         context.close();
 
 
